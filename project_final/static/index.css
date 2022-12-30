@@ -1,0 +1,170 @@
+body {
+  background: dimgrey;
+  color: white;
+}
+
+/* nav bar stuff */
+.ul-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+.li-nav {
+  float: left;
+}
+
+.li-nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.li-nav a:hover {
+  background-color: #111111;
+}
+
+/* end nav bar stuff */
+
+
+/* animating stuff  */
+
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+}
+body{
+  background: #42455a;
+}
+
+td, th {
+  text-align: center;
+}
+
+.figcaption-large {
+  font-size: xxx-large;
+}
+
+img {
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+h1{
+  font-size: 3rem;
+  margin: 20px;
+}
+
+.section_top {
+  background-color: #4f87f795;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.section_content {
+  background-color: #4fdbf768;
+  text-align: center;
+  align-items: center;
+}
+
+
+
+
+section .container{
+  margin: 100px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.reveal{
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* end animating stuff  */
+
+/* begin address formatting stuff */
+.hover-address {
+  position: relative;
+}
+
+.hover-address:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 50%;
+  background-color: inherit;
+  color: white;
+  padding: 1.5% 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  display: block; 
+}
+
+.hover-address:hover:before{
+  opacity: 1;
+  visibility: visible;
+  font-size: 150%;
+  padding-top: 3%;
+  text-align: center;
+  display: inline;
+  margin-left: -120%;
+}
+
+
+.address-div {
+  text-align: center;
+  align-items: center;
+  background-color: inherit;
+  color: white;
+}
+
+#scroll-to-top-button {
+position: fixed;
+bottom: 20px;
+right: 20px;  
+display: none;
+background-color: #ffffff;
+border: none;
+outline: none;
+border-radius: 50%;
+width: 50px;
+height: 50px;
+cursor: pointer;
+}
+
+
+#scroll-to-top-button svg {
+font-size: 24px;
+color: #000000;
+line-height: 50px;
+text-align: center;
+}
