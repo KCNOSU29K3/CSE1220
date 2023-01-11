@@ -1,5 +1,7 @@
-document.onload = function() {
+function main() {
     
+    console.log("loaded")
+
     // getting buttons and elements
     var paraBold = document.getElementById("boldingParagraph")
     var paraBoldButton = document.getElementById("boldParaButton")
@@ -19,7 +21,8 @@ document.onload = function() {
 
     paraBoldButton.addEventListener("click", () => {
         if (paraBoldClicked) {
-            paraBold.style = "font:700;color:white"
+            paraBold.style.fontWeight = "bold"
+            paraBold.style.color="white"
             paraBoldClicked=false
         }
         else {
@@ -51,3 +54,5 @@ document.onload = function() {
     })
 
 }
+
+main()
